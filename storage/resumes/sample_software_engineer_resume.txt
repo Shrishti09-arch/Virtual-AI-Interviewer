@@ -1,0 +1,37 @@
+Sarah Jenkins
+sarah.jenkins@techcareer.org | (555) 432-8765 | Seattle, WA
+LinkedIn: linkedin.com/in/sarahjenkins-dev | GitHub: github.com/sarahjenkins-dev
+
+PROFESSIONAL SUMMARY
+Senior Full Stack Software Engineer with 5+ years of experience architecting distributed cloud applications, scalable microservices, and modern reactive frontends with Python, FastAPI, React, and AWS.
+
+EDUCATION
+B.S. in Computer Science - University of Washington (2019) | 3.9 GPA
+
+TECHNICAL SKILLS
+Languages: Python, TypeScript, JavaScript, Go, SQL
+Frameworks: FastAPI, React, Next.js, Node.js, Tailwind CSS
+Cloud & DevOps: AWS (ECS, S3, RDS), Docker, Kubernetes, CI/CD GitHub Actions, Terraform
+Databases: PostgreSQL, Redis, MongoDB, Kafka
+
+WORK EXPERIENCE
+Senior Full Stack Engineer - CloudScale Solutions (2022 - Present)
+• Architected high-throughput async microservices processing 30M requests daily with 99.99% uptime.
+• Engineered real-time analytics dashboard with React, Tailwind, and WebSockets, cutting latency by 45%.
+• Optimized PostgreSQL query execution and Redis caching strategies, reducing p99 latency from 240ms to 65ms.
+
+Full Stack Developer - NextGen Media (2019 - 2022)
+• Developed scalable REST APIs using Python and FastAPI integrated with Stripe payment gateways.
+• Streamlined deployment pipelines using Docker containers and automated GitHub Actions CI/CD workflows.
+• Led frontend migration to React 18 and TypeScript, enhancing test coverage to 92%.
+
+PROJECTS
+Distributed Event Processing Broker (Python, FastAPI, Redis, Kafka, Docker)
+• Designed and implemented a distributed pub/sub broker handling 25k event payloads per second with guaranteed at-least-once delivery semantics.
+
+AI-Powered Career Intelligence Platform (React, TypeScript, Tailwind CSS, FastAPI, PostgreSQL)
+• Full-stack platform delivering automated ATS resume analysis, mock interview voice simulations, and dynamic multi-phase learning roadmaps.
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate
+• Certified Kubernetes Administrator (CKA)
