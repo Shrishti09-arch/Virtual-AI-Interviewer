@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white font-sans transition-colors duration-200;
+    min-height: 100vh;
+  }
+
+  html.light body {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  html.light .bg-slate-950 {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  html.light .bg-slate-900 {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  html.light .bg-slate-900\/80,
+  html.light .bg-slate-900\/60,
+  html.light .bg-slate-900\/50 {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    color: #0f172a !important;
+  }
+
+  html.light .bg-slate-950\/90,
+  html.light .bg-slate-950\/80,
+  html.light .bg-slate-950\/70,
+  html.light .bg-slate-950\/60 {
+    background-color: rgba(241, 245, 249, 0.9) !important;
+    color: #0f172a !important;
+  }
+
+  html.light .border-slate-800,
+  html.light .border-slate-800\/80,
+  html.light .border-slate-800\/60 {
+    border-color: #e2e8f0 !important;
+  }
+
+  html.light .text-slate-100,
+  html.light .text-white {
+    color: #0f172a !important;
+  }
+
+  html.light .text-slate-200 {
+    color: #1e293b !important;
+  }
+
+  html.light .text-slate-300 {
+    color: #334155 !important;
+  }
+
+  html.light .text-slate-400 {
+    color: #64748b !important;
+  }
+
+  html.light .hover\:bg-slate-800:hover,
+  html.light .hover\:bg-slate-800\/60:hover {
+    background-color: #f1f5f9 !important;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

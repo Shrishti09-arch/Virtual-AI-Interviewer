@@ -1,0 +1,68 @@
+export interface InterviewQuestionItem {
+  id: number;
+  session_id: number;
+  question_order: number;
+  category: string;
+  question_text: string;
+  is_follow_up: boolean;
+  difficulty_level: string;
+  candidate_answer?: string;
+  time_spent_seconds?: number;
+  has_local_recording?: boolean;
+  recording_storage_key?: string;
+  score: number;
+  score_out_of_10: number;
+  technical_accuracy?: number;
+  completeness?: number;
+  problem_solving_rating?: number;
+  feedback?: string;
+  correct_points?: string[];
+  incorrect_points?: string[];
+  missing_concepts?: string[];
+  model_answer?: string;
+  ideal_answer?: string;
+  improvement_suggestions?: string;
+  filler_words?: Record<string, number>;
+  total_fillers?: number;
+  repeated_words?: string[];
+  pauses_count?: number;
+  wpm?: number;
+  vocabulary_score?: number;
+}
+
+export interface InterviewSessionData {
+  id: number;
+  role_title: string;
+  experience_level: string;
+  interview_type: string;
+  difficulty: string;
+  technical_subjects: string[];
+  interview_duration_mins: number;
+  target_company?: string;
+  status: string;
+  total_questions: number;
+  current_question_index: number;
+  duration_seconds: number;
+  overall_score: number;
+  technical_score: number;
+  communication_score: number;
+  behavioral_score: number;
+  answer_quality_score: number;
+  problem_solving_score: number;
+  verdict: string;
+  overall_summary?: string;
+  key_strengths: string[];
+  areas_to_improve: string[];
+  recommended_topics: string[];
+  improvement_plan: string[];
+  full_transcript?: string;
+  assessment_disclaimer?: string;
+  total_filler_words: number;
+  average_wpm: number;
+  clarity_rating: string;
+  recording_consent?: boolean;
+  recording_path?: string;
+  created_at: string;
+  completed_at?: string;
+  questions: InterviewQuestionItem[];
+}
