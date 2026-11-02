@@ -1,0 +1,67 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- D:\virtual-ai-interviewer\venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: D:\virtual-ai-interviewer\backend
+plugins: anyio-4.15.1, asyncio-1.4.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 47 items
+
+tests/test_ai_hierarchy.py::TestAIHierarchy::test_ai_provider_priority PASSED [  2%]
+tests/test_ai_hierarchy.py::TestAIHierarchy::test_fallback_engine_structured_evaluation PASSED [  4%]
+tests/test_ai_hierarchy.py::TestAIHierarchy::test_ollama_model_selection PASSED [  6%]
+tests/test_database.py::TestDatabaseModels::test_database_connection_and_models PASSED [  8%]
+tests/test_database.py::TestDatabaseModels::test_interview_questions_metadata PASSED [ 10%]
+tests/test_database.py::TestDatabaseModels::test_user_data_isolation PASSED [ 12%]
+tests/test_interview.py::TestMockInterview::test_answer_evaluation PASSED [ 14%]
+tests/test_interview.py::TestMockInterview::test_communication_analysis PASSED [ 17%]
+tests/test_interview.py::TestMockInterview::test_initial_questions_generation PASSED [ 19%]
+tests/test_practice.py::TestTechnicalPractice::test_metadata_retrieval PASSED [ 21%]
+tests/test_practice.py::TestTechnicalPractice::test_sandbox_python_success PASSED [ 23%]
+tests/test_practice.py::TestTechnicalPractice::test_sandbox_security_rejection PASSED [ 25%]
+tests/test_resume.py::TestResumeServices::test_ats_scoring_and_audit PASSED [ 27%]
+tests/test_resume.py::TestResumeServices::test_job_description_matcher PASSED [ 29%]
+tests/test_resume.py::TestResumeServices::test_pdf_and_docx_generation PASSED [ 31%]
+tests/test_resume.py::TestResumeServices::test_structured_data_extraction PASSED [ 34%]
+tests/test_roadmap.py::TestCareerRoadmap::test_daily_study_plan_generation PASSED [ 36%]
+tests/test_roadmap.py::TestCareerRoadmap::test_dynamic_roadmap_generation PASSED [ 38%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_01_registration PASSED [ 40%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_02_login_and_logout PASSED [ 42%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_03_database_persistence PASSED [ 44%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_04_pdf_upload PASSED [ 46%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_05_docx_upload PASSED [ 48%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_06_resume_extraction PASSED [ 51%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_07_ats_scoring PASSED [ 53%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_08_resume_correction PASSED [ 55%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_09_role_based_resume_generation PASSED [ 57%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_10_pdf_download PASSED [ 59%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_11_docx_download PASSED [ 61%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_12_job_description_matching PASSED [ 63%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_13_ai_question_generation PASSED [ 65%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_14_duplicate_detection PASSED [ 68%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_15_mcq_evaluation PASSED [ 70%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_16_coding_workflow PASSED [ 72%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_17_webcam_permissions PASSED [ 74%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_18_audio_recording PASSED [ 76%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_19_video_recording PASSED [ 78%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_20_transcription PASSED [ 80%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_21_answer_evaluation PASSED [ 82%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_22_communication_feedback PASSED [ 85%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_23_roadmap_generation PASSED [ 87%]
+tests/test_section17_exhaustive.py::TestSection17Exhaustive::test_24_progress_tracking PASSED [ 89%]
+tests/test_security.py::TestSecurityControls::test_file_validation_magic_bytes PASSED [ 91%]
+tests/test_security.py::TestSecurityControls::test_jwt_creation_and_revocation PASSED [ 93%]
+tests/test_security.py::TestSecurityControls::test_password_hashing_and_verification PASSED [ 95%]
+tests/test_security.py::TestSecurityControls::test_password_strength_validation PASSED [ 97%]
+tests/test_security.py::TestSecurityControls::test_sandbox_security_violation PASSED [100%]
+
+============================== warnings summary ===============================
+app\database.py:13
+  D:\virtual-ai-interviewer\backend\app\database.py:13: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    Base = declarative_base()
+
+tests/test_section17_exhaustive.py: 11 warnings
+  D:\virtual-ai-interviewer\venv\Lib\site-packages\sqlalchemy\sql\schema.py:4296: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    return util.wrap_callable(lambda ctx: fn(), fn)  # type: ignore[call-arg, no-any-return, no-untyped-call]  # noqa: E501
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+====================== 47 passed, 12 warnings in 26.70s =======================
